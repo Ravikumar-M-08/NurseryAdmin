@@ -10,7 +10,7 @@ const AddItems = () => {
                         <Nav />
                     </div>
                     <div class="col-lg-10 ">
-                <form action="http://localhost:8080/send" method="post">
+                <form action="https://nurseryspring.onrender.com/send" method="post">
                     <div class="mt-3">
                         <label>Upload image</label><br/>
                         <input type="text" name="ProductImg" id="ProductImg" placeholder="Paste Image Url"/>

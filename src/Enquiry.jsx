@@ -4,7 +4,7 @@ import Nav from './Nav'
 const Enquiry = () => {
       const [products, setProducts] = useState([]);
     useEffect(() => {
-            fetch("http://localhost:8080/enquiry")
+            fetch("https://nurseryspring.onrender.com/enquiry")
                 .then(res => res.json())
                 .then(data => setProducts(data))
                 .catch(err => console.error(err));

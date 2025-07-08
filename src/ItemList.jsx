@@ -9,7 +9,7 @@ const ItemList = () => {
     const [deleteProductId, setDeleteProductId] = useState(null);
 
     useEffect(() => {
-        fetch("http://localhost:8080/data")
+        fetch("https://nurseryspring.onrender.com/data")
             .then(res => res.json())
             .then(data => setProducts(data))
             .catch(err => console.error(err));
@@ -70,7 +70,7 @@ const ItemList = () => {
                     <div className="alert">
                         <h2>Confirmation Request</h2>
                         <p>Are you sure you want to delete {deleteProductId}?</p>
-                        <form action="http://localhost:8080/delete" method="post">
+                        <form action="https://nurseryspring.onrender.com/delete" method="post">
                             <input type="hidden" name="PId" value={deleteProductId} />
                             <input type="submit" value="OK" />
                         </form>
@@ -83,7 +83,7 @@ const ItemList = () => {
                 <div className='cover'>
                     <div className="updateform">
                         <h2>Update Product</h2>
-                        <form action="http://localhost:8080/update" method="post">
+                        <form action="https://nurseryspring.onrender.com/update" method="post">
                             <div className="row">
                                 <div className="col-6 mt-2">
                                     <label>ProductId:</label>
