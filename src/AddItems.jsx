@@ -9,22 +9,22 @@ const AddItems = () => {
                     <div className="col-2 p-0">
                         <Nav />
                     </div>
-                    <div class="col-lg-10 ">
+                    <div className="col-lg-10 ">
                 <form action="https://nurseryspring.onrender.com/send" method="post">
-                    <div class="mt-3">
+                    <div className="mt-3">
                         <label>Upload image</label><br/>
                         <input type="text" name="ProductImg" id="ProductImg" placeholder="Paste Image Url"/>
                     </div>
-                    <div class="mt-3">
+                    <div className="mt-3">
                         <label>Product name</label><br/>
                         <input type="text" placeholder="Type Here" name="ProductName" id="ProductName"/>
                     </div>
-                    <div class="mt-3">
+                    <div className="mt-3">
                         <label>Product description</label><br/>
                         <textarea name="ProductDescription" id="ProductDescription" cols="50" rows="10" placeholder="Write content here"></textarea>
                     </div>
-                    <div class="row mt-3">
-                        <div class="categary col-6">
+                    <div className="row mt-3">
+                        <div className="categary col-6">
                             <label>Product categary</label><br/>
                             <select name="ProductCategery" id="ProductCategery">
                                 <option value="Gardening">Gardening</option>
@@ -36,13 +36,13 @@ const AddItems = () => {
                                 <option value="Accessories">Accessories</option>
                             </select>
                         </div>
-                        <div class="price col-6">
+                        <div className="price col-6">
                             <label for="">Product Price</label>
                             <input type="number" name="ProductPrice" id="ProductPrice" />
                         </div>
                     </div>
-                    <div class="mt-3">
-                        <input type="submit" class="submit-btn" value="ADD"/>
+                    <div className="mt-3">
+                        <input type="submit" className="submit-btn" value="ADD"/>
                     </div>
                 </form>
                 
