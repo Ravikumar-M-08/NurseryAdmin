@@ -118,7 +118,7 @@ const ItemList = () => {
                                 </div>
                                 <div className="col-6 mt-2">
                                     <label>ProductDescription:</label>
-                                    <textarea name="ProductDescription" id="ProductDescription" cols="50" rows="7" defaultValue={currentProduct.productDescription}></textarea>
+                                    <textarea name="ProductDescription" id="ProductDescription" cols="50" rows="6" defaultValue={currentProduct.productDescription}></textarea>
                                 </div>
                                 <div className="col-6 mt-2">
                                     <input type="submit" value="Save" />
