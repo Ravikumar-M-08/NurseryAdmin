@@ -94,28 +94,31 @@ const ItemList = () => {
                                     <input type="text" name="ProductImg" defaultValue={currentProduct.productImg} required />
                                 </div>
                                 <div className="col-6 mt-2">
-                                    <label>ProductName:</label>
-                                    <input type="text" name="ProductName" defaultValue={currentProduct.productName} required />
+                                    <div>
+                                        <label>ProductName:</label>
+                                        <input type="text" name="ProductName" defaultValue={currentProduct.productName} required />
+                                    </div>
+                                    <div>
+                                        <label>ProductPrice:</label>
+                                        <input type="text" name="ProductPrice" defaultValue={currentProduct.productprice} required />
+                                    </div>
+                                    <div>
+                                        <label>ProductCategery:</label>
+                                        <select name="ProductCategery" defaultValue={currentProduct.productCategery}>
+                                            <option value="Gardening">Gardening</option>
+                                            <option value="Plants">Plants</option>
+                                            <option value="Bubls">Bubls</option>
+                                            <option value="Pots">Pots</option>
+                                            <option value="Seeds">Seeds</option>
+                                            <option value="Fertilizer">Fertilizer</option>
+                                            <option value="Accessories">Accessories</option>
+                                        </select>
+                                    </div>
+
                                 </div>
                                 <div className="col-6 mt-2">
                                     <label>ProductDescription:</label>
                                     <textarea name="ProductDescription" id="ProductDescription" cols="50" rows="10" defaultValue={currentProduct.productDescription}></textarea>
-                                </div>
-                                <div className="col-6 mt-2">
-                                    <label>ProductCategery:</label>
-                                    <select name="ProductCategery" defaultValue={currentProduct.productCategery}>
-                                        <option value="Gardening">Gardening</option>
-                                        <option value="Plants">Plants</option>
-                                        <option value="Bubls">Bubls</option>
-                                        <option value="Pots">Pots</option>
-                                        <option value="Seeds">Seeds</option>
-                                        <option value="Fertilizer">Fertilizer</option>
-                                        <option value="Accessories">Accessories</option>
-                                    </select>
-                                </div>
-                                <div className="col-6 mt-2">
-                                    <label>ProductPrice:</label>
-                                    <input type="text" name="ProductPrice" defaultValue={currentProduct.productprice} required />
                                 </div>
                                 <div className="col-6 mt-2">
                                     <input type="submit" value="Save" />
