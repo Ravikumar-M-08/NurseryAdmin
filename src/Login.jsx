@@ -1,8 +1,12 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 function Login() {
     const username = "ravi";
     const userpass = "ravi@08";
+
+    const navigate = useNavigate();
+
 
     const [formData, setData] = useState({ name: '', password: '', });
     const [error, setError] = useState(null);
@@ -17,7 +21,8 @@ function Login() {
     const handleSubmit = (e) => {
         e.preventDefault();
         if (username == formData.name && userpass == formData.password) {
-            window.location.href = "/itemlist"
+            navigate("/itemlist");
+
         }
         else {
             setError("Username and Password Not Match");
