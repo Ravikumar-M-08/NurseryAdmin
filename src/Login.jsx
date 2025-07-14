@@ -17,7 +17,7 @@ function Login() {
     const handleSubmit = (e) => {
         e.preventDefault();
         if (username == formData.name && userpass == formData.password) {
-            window.location.href = "https://nurseryadmin.netlify.app/listitems"
+            window.location.href = "https://nurseryadmin.netlify.app/itemlist"
         }
         else {
             setError("Username and Password Not Match");
