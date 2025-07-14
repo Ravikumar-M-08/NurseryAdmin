@@ -1,37 +1,43 @@
-*{
+* {
     box-sizing: border-box;
     padding: 0px;
     margin: 0px;
 }
-body{
+
+body {
     background-color: whitesmoke;
     position: relative;
     overflow-x: hidden;
 }
-header{
+
+header {
     background-color: aliceblue;
     height: 10vh;
     border-bottom: 1px solid rgb(194, 194, 194);
 }
+
 header .logo {
     width: 100px;
 }
-header .logo img{
+
+header .logo img {
     width: 100%;
     height: 100%;
 }
-.admin-section{
-    height:100%;
+
+.admin-section {
+    height: 100%;
     border-right: 1px solid rgb(128, 128, 128);
     padding: 0px;
     /* position: fixed; */
 }
-.admin-section a{
-    float:right;
-    color:#000;
-    width:200px;
+
+.admin-section a {
+    float: right;
+    color: #000;
+    width: 200px;
     padding: 8px;
-    margin:30px 0px 0px 0px ;
+    margin: 30px 0px 0px 0px;
     text-decoration: none;
     display: flex;
     align-items: center;
@@ -39,14 +45,18 @@ header .logo img{
     border-left: 2px solid rgb(128, 128, 128);
     border-bottom: 2px solid rgb(128, 128, 128);
 }
-.admin-section a svg{
+
+.admin-section a svg {
     margin: 0px 5px;
 }
+
 .nav-link.active {
-    background-color: #e0e0e0; /* Light gray background */
-    border-radius: 6px 0px 0px 6px ;
+    background-color: #e0e0e0;
+    /* Light gray background */
+    border-radius: 6px 0px 0px 6px;
 }
-form{
+
+form {
     width: 400px;
 }
 
@@ -58,52 +68,61 @@ form select {
     border-radius: 5px;
     border: 2px solid rgb(0, 151, 0);
 }
+
 form input:focus,
 form textarea:focus,
-form select:focus{
+form select:focus {
     width: 100%;
     padding: 5px 5px;
     border: 2px solid rgb(0, 151, 0);
     outline: none;
 }
-form input[type=submit]{
+
+form input[type=submit] {
     width: fit-content;
     padding: 8px 30px;
-    background-color:rgb(0, 151, 0);
+    background-color: rgb(0, 151, 0);
     border: rgb(0, 151, 0);
     color: #fff;
 }
-table{
+
+table {
     width: 100%;
     padding: 0;
     margin: 0;
 }
-table th,table td{
+
+table th,
+table td {
     width: 200px;
 }
-.updateform{
+
+.updateform {
     position: absolute;
     background-color: #fff;
     box-shadow: 0px 0px 10px #000;
     padding: 20px;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     border-radius: 8px;
 }
-.cover{
+
+.cover {
     width: 100%;
     height: 100vh;
-    background-color: rgba(245, 243, 243,0.5);
+    background-color: rgba(245, 243, 243, 0.5);
     position: fixed;
     top: 0;
 }
-.updateform form{
+
+.updateform form {
     width: 100%;
 }
-.cancleform{
+
+.cancleform {
     position: absolute;
-    top:-10px;
+    top: -10px;
     right: -10px;
     width: 30px;
     height: 30px;
@@ -114,54 +133,130 @@ table th,table td{
     justify-content: center;
     align-items: center;
 }
-.cancleform i{
-    font-size:20px;
-    color:#fff;
+
+.cancleform i {
+    font-size: 20px;
+    color: #fff;
 }
-.cancleform:hover{
+
+.cancleform:hover {
     cursor: pointer;
     background-color: #000;
     transition: all 0.5s;
 }
-.alert{
+
+.alert {
     position: absolute !important;
     left: 50%;
     top: 50%;
-    transform: translate(-50%,-50%);
-    width:fit-content;
-    box-shadow:0px 0px 10px #000;
+    transform: translate(-50%, -50%);
+    width: fit-content;
+    box-shadow: 0px 0px 10px #000;
     background-color: #fff !important;
 }
-.alert input[type=submit]:hover{
+
+.alert input[type=submit]:hover {
     background-color: #000;
     transition: all 0.5s;
 }
-.confirm_btn{
+
+.confirm_btn {
     text-align: center;
 }
-.button_btn,.btn_button:hover{
+
+.button_btn,
+.btn_button:hover {
     width: fit-content;
     padding: 5px 10px;
-    background-color:rgb(0, 151, 0);
+    background-color: rgb(0, 151, 0);
     color: #fff;
     border: none;
     border-radius: 8px;
     transition: all 0.25s;
 }
-.btn_button,.button_btn:hover{
+
+.btn_button,
+.button_btn:hover {
     width: fit-content;
     padding: 5px 10px;
-    background-color:#000;
+    background-color: #000;
     color: #fff;
     border: none;
     border-radius: 8px;
     transition: all 0.25s;
 }
-.colspan{
+
+.colspan {
     text-align: center;
 }
-table tr,table th,table td{
+
+table tr,
+table th,
+table td {
     border-bottom: 2px solid gray;
     text-align: center;
     /* padding:0px 10px; */
+}
+
+.form_container {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form_content {
+    background-color: aliceblue;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0px 0px 10px rgb(176, 210, 240);
+}
+
+.form_content button {
+    padding: 10px 30px;
+    background-color: rgb(0, 151, 0);
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+}
+
+.form_content .input_section {
+    border: 1px solid rgba(128, 128, 128, 0.5);
+    position: relative;
+    border-radius: 7px;
+    margin-top: 30px;
+
+}
+
+.form_content .input_section input {
+    width: 100%;
+    border-radius: 0;
+    border: none;
+    background-color: aliceblue;
+    height: 5vh;
+    border-radius: 7px;
+}
+
+.form_content .input_section span {
+    position: absolute;
+    left: 1%;
+    top: 20%;
+    height: fit-content;
+    font-size: 15px;
+    background-color: aliceblue;
+    color: gray;
+    padding: 0px 5px;
+}
+.form_content .input_section input:focus{
+    border: 2px solid rgb(0, 151, 0);
+}
+.form_content .input_section input:focus+span {
+    top: -35%;
+    left: 5%;
+    color: rgb(0, 151, 0);
+    transition: all 0.2s linear;
+}
+.form_content p{
+    color: red;
 }

@@ -5,7 +5,7 @@ const Nav = () => {
         <>
             <div className='admin-section'>
                 <div className="content">
-                    <Link to="/" className={`nav-link ${location.pathname === '/' ? 'active' : ''}`}
+                    <Link to="/listitems" className={`nav-link ${location.pathname === '/listitems' ? 'active' : ''}`}
                     ><svg xmlns="http://www.w3.org/2000/svg" height="30px"
                         viewBox="0 -960 960 960" width="30px" fill="#000000">
                             <path

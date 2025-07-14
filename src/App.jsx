@@ -4,11 +4,10 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
 import AddItems from './AddItems'
-import Orders from './Orders'
 import ItemList from './ItemList'
 import Header from './Header'
-import Nav from './Nav'
 import Enquiry from './Enquiry'
+import Login from './Login'
 
 // import './App.css'
 
@@ -19,9 +18,9 @@ function App() {
       <BrowserRouter>
       <Header/>
       <Routes>
-        <Route path="/"  element={<ItemList/>}/>
+        <Route path="/"  element={<Login/>}/>
+        <Route path="/listitems"  element={<ItemList/>}/>
         <Route path='/additems' element={<AddItems/>} />
-        <Route path='/orders' element={<Orders/>} />
         <Route path='/enquiry' element={<Enquiry/>} />
       </Routes>
     </BrowserRouter>
