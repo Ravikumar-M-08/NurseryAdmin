@@ -4,7 +4,9 @@ function Success(){
     
     return(
         <>
+        <div className='Container-fluid'>
             <h2>Success</h2>
+        </div>
         </>
     );
 }
