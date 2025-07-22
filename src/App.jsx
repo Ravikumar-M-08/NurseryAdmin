@@ -8,7 +8,6 @@ import ItemList from './ItemList'
 import Header from './Header'
 import Enquiry from './Enquiry'
 import Login from './Login'
-import Success from './Success'
 
 // import './App.css'
 
@@ -23,7 +22,6 @@ function App() {
         <Route path="/itemlist"  element={<ItemList/>}/>
         <Route path='/additems' element={<AddItems/>} />
         <Route path='/enquiry' element={<Enquiry/>} />
-        <Route path="/success" element={<Success/>} />
       </Routes>
     </BrowserRouter>
     </>
