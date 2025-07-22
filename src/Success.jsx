@@ -1,4 +1,6 @@
 function Success(){
+    console.log("Success component rendered");
+    
     return(
         <>
             <h2>Success</h2>
