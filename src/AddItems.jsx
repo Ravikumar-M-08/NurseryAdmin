@@ -25,7 +25,7 @@ const AddItems = () => {
                     </div>
                     <div className="row mt-3">
                         <div className="categary col-6">
-                            <label>Product categary</label><br/>
+                            <label>Product category </label><br/>
                             <select name="ProductCategery" id="ProductCategery">
                                 <option value="Gardening">Gardening</option>
                                 <option value="Plants">Plants</option>

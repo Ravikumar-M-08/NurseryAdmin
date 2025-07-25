@@ -43,7 +43,7 @@ const ItemList = () => {
                                 <th>ProductId</th>
                                 <th>ProductImage</th>
                                 <th>ProductName</th>
-                                <th>ProductCategery</th>
+                                <th>ProductCategory </th>
                                 <th>ProductPrice</th>
                                 <th colSpan="2">Operations</th>
                             </tr>
@@ -103,7 +103,7 @@ const ItemList = () => {
                                         <input type="text" name="ProductPrice" defaultValue={currentProduct.productprice} required />
                                     </div>
                                     <div>
-                                        <label>ProductCategery:</label>
+                                        <label>ProductCategory:</label>
                                         <select name="ProductCategery" defaultValue={currentProduct.productCategery}>
                                             <option value="Gardening">Gardening</option>
                                             <option value="Plants">Plants</option>
