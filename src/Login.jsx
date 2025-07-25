@@ -2,8 +2,8 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 function Login() {
-    const username = "ravi";
-    const userpass = "ravi@08";
+    const username = "gardenpath";
+    const userpass = "gardenpath@123";
 
     const navigate = useNavigate();
 
